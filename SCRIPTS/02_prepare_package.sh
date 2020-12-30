@@ -138,6 +138,9 @@ svn co https://github.com/openwrt/packages/trunk/devel/gcc feeds/packages/devel/
 #更换Golang版本
 rm -rf ./feeds/packages/lang/golang
 svn co https://github.com/openwrt/packages/trunk/lang/golang feeds/packages/lang/golang
+#更换python版本
+rm -rf ./feeds/packages/lang/python
+svn co https://github.com/openwrt/packages/trunk/lang/python feeds/packages/lang/python
 #beardropper
 git clone --depth 1 https://github.com/NateLol/luci-app-beardropper.git package/luci-app-beardropper
 sed -i 's/"luci.fs"/"luci.sys".net/g' package/luci-app-beardropper/luasrc/model/cbi/beardropper/setting.lua
