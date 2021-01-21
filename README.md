@@ -1,6 +1,8 @@
 ## fork from QiuSimons
-修改登陆IP：192.168.2.1 密码：无
-wan/lan不交换
+修改登陆IP：192.168.2.1
+
+密码：无
+
 添加fan控制
 
 
