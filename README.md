@@ -1,9 +1,11 @@
 ## fork from QiuSimons
-修改登陆IP：192.168.2.1
+登陆IP：192.168.2.1
 
-密码：无
+用户名：root 密码：无
 
-添加fan控制
+R2S添加fan控制
+
+WAN/LAN交换（靠近电源为WAN）
 
 
 ## R2S/R4S/X86 基于原生OpenWRT 的固件(AS IS, NO WARRANTY!!!)
