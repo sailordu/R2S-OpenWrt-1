@@ -393,6 +393,8 @@ cp -f ../PATCH/new/script/fuck package/base-files/files/usr/bin/fuck
 cp -f ../PATCH/new/script/chinadnslist package/base-files/files/usr/bin/chinadnslist
 #最大连接
 sed -i 's/16384/65536/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
+#更改默认IP地址
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 #删除已有配置
 rm -rf .config
 #预配置一些插件
