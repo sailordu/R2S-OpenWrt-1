@@ -371,6 +371,8 @@ cp -f ../PATCH/new/script/chinadnslist package/base-files/files/usr/bin/chinadns
 sed -i 's/16384/65536/g' package/kernel/linux/files/sysctl-nf-conntrack.conf
 #修改启动等待（可能无效）
 sed -i 's/default "5"/default "0"/g' config/Config-images.in
+#更改默认IP地址
+sed -i 's/192.168.1.1/192.168.2.1/g' package/base-files/files/bin/config_generate
 #预配置一些插件
 cp -rf ../PATCH/X86/files ./files
 #生成默认配置及缓存
