@@ -91,6 +91,7 @@ jobs:
         cp -r ./SCRIPTS/X86/. ./SCRIPTS/
         cp -r ./SCRIPTS/. ./
         /bin/bash 01_get_ready.sh
+	/bin/bash 02_target_only.sh
     - name: Prepare Package
       run: |
         cd openwrt
