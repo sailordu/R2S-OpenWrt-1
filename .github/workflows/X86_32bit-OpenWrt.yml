@@ -105,12 +105,12 @@ jobs:
         let Make_Process=$(nproc)+1
         make -j${Make_Process} V=w
         echo $?
-    - name: If Error
-      if: steps.compileopenwrt.outcome == 'failure'
-      run: |
-        cat openwrt/.config
-        echo '================================================================'
-        cd openwrt && make -j1 V=s
+  #  - name: If Error
+  #    if: steps.compileopenwrt.outcome == 'failure'
+  #    run: |
+  #      cat openwrt/.config
+  #      echo '================================================================'
+  #      cd openwrt && make -j1 V=s
     - name: Cleaning
       run: |
         df -h
