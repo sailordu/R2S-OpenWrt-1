@@ -111,11 +111,11 @@ jobs:
   #      cat openwrt/.config
   #      echo '================================================================'
   #      cd openwrt && make -j1 V=s
-    - name: Cleaning
-      run: |
-        df -h
-        cd openwrt/bin/targets/x86/64
-        /bin/bash ../../../../../SCRIPTS/06_cleaning.sh
+ #   - name: Cleaning
+ #     run: |
+ #       df -h
+ #       cd openwrt/bin/targets/x86/64
+ #       /bin/bash ../../../../../SCRIPTS/06_cleaning.sh
     - name: Print Disk Space After
       run: df -h
     - name: Assemble Artifact
